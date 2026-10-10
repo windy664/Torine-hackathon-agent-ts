@@ -1,0 +1,28 @@
+{
+  "name": "torine-hackathon-agent-ts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx index.ts",
+    "judge": "tsx index.ts --judge-only",
+    "typecheck": "tsc --noEmit",
+    "test:judge": "tsx --test tests/judge.test.ts",
+    "test:judge:browser": "tsx --test tests/judge-browser.test.ts",
+    "test:controller": "tsx --test tests/controller.test.ts tests/controller-scheduler.test.ts",
+    "test:controller:opencode": "tsx --test tests/controller-opencode.test.ts",
+    "test:controller:pipeline": "tsx --test tests/controller-pipeline.test.ts"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "1.18.34",
+    "@playwright/test": "1.61.1",
+    "arcbench-agent-runtime-js": "file:./arcbench-agent-runtime-js",
+    "openai": "^4.104.0",
+    "opencode-ai": "1.18.34",
+    "tsx": "^4.20.3",
+    "yaml": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "typescript": "^5.8.3"
+  }
+}
