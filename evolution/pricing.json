@@ -1,0 +1,10 @@
+{
+  "source": "ARC-Bench metering /user/models, arcbench models --json",
+  "checkedAt": "2026-10-07T00:56:00Z",
+  "unit": "CNY / 1M tokens",
+  "models": {
+    "deepseek-v4-flash": { "input": 3, "cacheHit": 0.1, "output": 9 },
+    "deepseek-v4-flash-vision-exp": { "input": 1, "cacheHit": 0.02, "output": 4 },
+    "deepseek-v4-pro": { "input": 9, "cacheHit": 0.3, "output": 27 }
+  }
+}

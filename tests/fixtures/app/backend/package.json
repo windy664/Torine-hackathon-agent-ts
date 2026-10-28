@@ -1,0 +1,1 @@
+{"name":"torine-local-browser-fixture","private":true,"scripts":{"start":"node server.cjs"}}

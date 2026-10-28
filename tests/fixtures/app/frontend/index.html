@@ -1,0 +1,8 @@
+<!doctype html><html><body>
+<label for="name">Name</label><input id="name"><button id="save">Save</button><p role="status" id="result"></p>
+<script>
+const nameInput = document.getElementById('name'), result = document.getElementById('result');
+async function load() { const value = await (await fetch('/api/value')).json(); nameInput.value = value.name; }
+document.getElementById('save').onclick = async () => { const response = await fetch('/api/value', {method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({name:nameInput.value})}); const body = await response.json(); result.textContent = response.ok ? 'Saved' : body.error; };
+load();
+</script></body></html>
