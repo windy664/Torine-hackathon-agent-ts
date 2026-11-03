@@ -1,4 +1,15 @@
+<div align="center">
+
+<img src="assets/banner.svg" alt="Torine-hackathon-agent-ts" width="100%">
+
+</div>
+
 # Torine-hackathon-agent-ts
+
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?style=flat-square&logo=typescript&logoColor=white)
+![Engine](https://img.shields.io/badge/Engine-opencode%20(stock)-8b5cf6?style=flat-square)
+![Judge](https://img.shields.io/badge/Judge-Playwright%20Chromium-e2b90f?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-3da639?style=flat-square)
 
 ARC-Bench hackathon agent. A TypeScript adapter layer that drives **opencode**
 (stock `opencode-ai` binary via npm - zero fork/patch) as the coding engine,
